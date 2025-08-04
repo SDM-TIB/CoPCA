@@ -120,10 +120,10 @@ Each benchmark includes original, validated, and constraint-filtered variants of
 
 ## 🔍 Referenced Works
 
-- **PyKEEN** – _Ali et al., 2021: [!paper][http://jmlr.org/papers/v22/20-825.html](paper)   
-- **SPaRKLE** – Purohit et al., 2023: [https://doi.org/10.1145/3587259.3627547](paper)   
-- **VISE** – Purohit et al., 2024:  [https://ceur-ws.org/Vol-3831/](paper)
-- **VANILLA** – Purohit et al., 2025: [https://doi.org/10.1016/j.knosys.2025.113939](paper)  
+- **PyKEEN** – _Ali et al., 2021: [paper](http://jmlr.org/papers/v22/20-825.html)   
+- **SPaRKLE** – Purohit et al., 2023: [paper](https://doi.org/10.1145/3587259.3627547)   
+- **VISE** – Purohit et al., 2024:  [paper](https://ceur-ws.org/Vol-3831/)
+- **VANILLA** – Purohit et al., 2025: [paper](https://doi.org/10.1016/j.knosys.2025.113939)  
 
 ---
 
