@@ -21,7 +21,7 @@ The **CoPCA Pipeline** follows these major steps:
 
 ```
 ├── KG/                     # Original, valid, and invalid KGs for benchmarks
-│   ├── french_royalty/
+│   ├── french_royalty/        
 │   ├── YAGO3-10/
 │   └── DB100K/
 │
@@ -32,8 +32,8 @@ The **CoPCA Pipeline** follows these major steps:
 ├── Symbolic Learning/     # Scripts for heuristic transformation and categorization
 │
 ├── Numerical Learning/    # KGE pipeline scripts (kge.py) and configs (input.json)
-├── requirements.txt
-└── README.md              # This file
+├── requirements.txt       # Necessary dependencies  
+└── README.md             
 ```
 
 ---
@@ -42,7 +42,7 @@ The **CoPCA Pipeline** follows these major steps:
 
 ### 1. Clone the Repository
 ```bash
-git clone
+git clone https://github.com/SDM-TIB/CoPCA.git
 ```
 
 ### 2. Create a Virtual Environment and Install Dependencies
