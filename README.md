@@ -120,7 +120,7 @@ Each benchmark includes original, validated, and constraint-filtered variants of
 
 ## 🔍 Referenced Works
 
-- **PyKEEN** – _Ali et al., 2021: [http://jmlr.org/papers/v22/20-825.html](paper)   
+- **PyKEEN** – _Ali et al., 2021: [!paper][http://jmlr.org/papers/v22/20-825.html](paper)   
 - **SPaRKLE** – Purohit et al., 2023: [https://doi.org/10.1145/3587259.3627547](paper)   
 - **VISE** – Purohit et al., 2024:  [https://ceur-ws.org/Vol-3831/](paper)
 - **VANILLA** – Purohit et al., 2025: [https://doi.org/10.1016/j.knosys.2025.113939](paper)  
@@ -129,6 +129,8 @@ Each benchmark includes original, validated, and constraint-filtered variants of
 
 ## 👨‍💻 Authors & Contact
 
+CoPCA has been developed by members of the Scientific Data Management Group at TIB, as an ongoing research effort.
+The development is co-ordinated and supervised by Maria-Esther Vidal.
 Developed and maintained by:
 
 - **Disha Purohit and Yashrajsinh Chudasama**
