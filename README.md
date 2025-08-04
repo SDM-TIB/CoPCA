@@ -1,3 +1,4 @@
+[![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](LICENSE)
 # 🧠🔗 COPCA: Capturing Symbolic Knowledge of Constraints and Incompleteness to Guide Inductive Learning in Neuro-Symbolic Knowledge Graph Completion
 Welcome to the official repository for **CoPCA**, a novel framework that integrates symbolic constraints and incomplete knowledge to guide neuro-symbolic learning. This pipeline enhances the quality of Knowledge Graph Embeddings (KGEs) through logical rule mining, heuristic categorization, and constraint-based learning — paving the way for more explainable and robust downstream tasks such as link prediction.
 
@@ -35,6 +36,32 @@ The **CoPCA Pipeline** follows these major steps:
 ├── requirements.txt       # Necessary dependencies  
 └── README.md             
 ```
+
+---
+## 📊 Benchmark Statistics
+
+| **KG Size** | **Benchmark**     | **#Triples** | **#Entities** | **#Relations** |
+|-------------|-------------------|--------------|----------------|----------------|
+| **Large**   | DB100K            | 695,572      | 99,604         | 470            |
+| **Medium**  | YAGO3-10          | 1,080,264    | 123,086        | 37             |
+| **Small**   | French Royalty    | 10,526       | 2,601          | 12             |
+
+| **KG Size** | **Benchmark**     | **#Constraints** | **#Valid** | **#Invalid** |
+|-------------|-------------------|------------------|------------|--------------|
+| **Large**   | DB100K            | 6                | 390,351    | 62,024       |
+| **Medium**  | YAGO3-10          | 4                | 393,205    | 58,719       |
+| **Small**   | French Royalty    | 2                | 1,922      | 298          |
+
+## 📈 Evaluation Metrics
+
+We evaluate KG completion using embedding models:
+- **TransE**, **TransH**, **TransD**
+- **RotatE**, **ComplEx**, **TuckER**
+- **CompGCN**
+
+Metrics reported:
+- **Hits@1**, **Hits@3**, **Hits@5**, **Hits@10**
+- **Mean Reciprocal Rank (MRR)**
 
 ---
 
