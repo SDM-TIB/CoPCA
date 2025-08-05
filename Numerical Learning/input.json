@@ -1,0 +1,5 @@
+{
+  "KG": "FR_Transform_Valid.nt",
+  "model": ["RotatE"],
+  "path_to_results": "results_FR_valid/"
+}
