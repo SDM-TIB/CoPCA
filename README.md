@@ -1,5 +1,5 @@
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](LICENSE)
-# 🧠🔗 COPCA: Capturing Symbolic Knowledge of Constraints and Incompleteness to Guide Inductive Learning in Neuro-Symbolic Knowledge Graph Completion
+# 🧠🔗 CoPCA: Capturing Symbolic Knowledge of Constraints and Incompleteness to Guide Inductive Learning in Neuro-Symbolic Knowledge Graph Completion
 Welcome to the official repository for **CoPCA**, a novel framework that integrates symbolic constraints and incomplete knowledge to guide neuro-symbolic learning. This pipeline enhances the quality of Knowledge Graph Embeddings (KGEs) through logical rule mining, heuristic categorization, and constraint-based learning — paving the way for more explainable and robust downstream tasks such as link prediction.
 
 ---
@@ -78,35 +78,6 @@ python -m venv venv
 source venv/bin/activate  # On Windows: venv\Scripts\activate
 pip install -r requirements.txt
 ```
-
-### 3. Run the CoPCA Pipeline
-
-#### 🔍 Step 1: Validate KG with SHACL
-```bash
-cd Constraints
-python validate_kg.py --kg ../KG/YAGO3-10/original.ttl --shacl yago_constraints.ttl
-```
-
-#### 📜 Step 2: Mine Logical Rules with AMIE
-```bash
-cd Rules
-java -jar amie.jar ../KG/YAGO3-10/original.tsv > amie_rules.txt
-```
-
-#### 🧩 Step 3: Categorize and Transform Heuristics
-```bash
-cd Symbolic\ Learning
-python categorize_rules.py --rules ../Rules/amie_rules.txt
-python transform_kg.py --kg ../KG/YAGO3-10/original.tsv --heuristics valid_rules.txt
-```
-
-#### 🔢 Step 4: Learn KGE Models
-```bash
-cd ../Numerical\ Learning
-python kge.py --config input.json
-```
-
----
 
 ## 📊 Benchmarks Included
 
