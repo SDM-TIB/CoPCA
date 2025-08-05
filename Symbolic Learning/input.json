@@ -1,0 +1,26 @@
+{
+  "input": {
+    "kg_folder": ".",
+    "kg_name": "DB100K",
+    "kg_subfolder": "KG/{kg_name}",
+    "kg_filename": "DB100K.nt",
+    "kg_format": "nt",
+    "validation_report_path": "Constraints/{kg_name}/result_{kg_name}/validationReport.ttl",
+    "rules_path": "Rules/DB100K.csv"
+  },
+  "output": {
+    "output_folder": "output/{kg_name}/",
+    "output_filename": "{kg_name}_with_validation",
+    "output_format": "same_as_input"
+  },
+  "pca_settings": {
+    "validation_predicate": "http://validation.org/hasValidationStatus",
+    "valid_values": ["valid"],
+    "invalid_values": ["invalid"],
+    "namespaces": {
+      "ex": "http://db100k.org/"
+    },
+    "default_namespace": "http://db100k.org/"
+  }
+}
+
