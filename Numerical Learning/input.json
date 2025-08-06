@@ -1,5 +1,5 @@
 {
-  "KG": "FR_Transform_Valid.nt",
-  "model": ["RotatE"],
-  "path_to_results": "results_FR_valid/"
+  "KG": "./KG/FrenchRoyalty/french_royalty.nt",
+  "model": ["TransE", "TransD", "TransH","RotatE", "ComplEx"],
+  "path_to_results": "results/"
 }
