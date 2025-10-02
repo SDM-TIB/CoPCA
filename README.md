@@ -78,6 +78,36 @@ python -m venv venv
 source venv/bin/activate  # On Windows: venv\Scripts\activate
 pip install -r requirements.txt
 ```
+### Step-by-Step Instructions
+Naviagte to `Symbolic Learning/` directory and follow the steps below:
+#### 🔍 Step 1: Validate KG with SHACL
+```bash
+python Validation.py 
+```
+This script will excute SHACL constraints over repsective benchmark KG.
+
+#### 🔍 Step 2: Calculate constraint-aware PCA
+```bash
+python constraint-driven-pca-calculator.py --input input.json
+```
+This script estimate the metrics **PCA_valid** and **PCA_invalid**.
+
+#### 🔍 Step 3: Enriching vaidated KG with symbolic predictions
+```bash
+python Symbolic_predictions.py --input input-symbolicPred.json
+
+```
+This script generates the enriched KG based on the selection of valid and invalid rules. Further, this KG is utilized to measure the performance of numerical learning models.
+
+Now navigate to `Numerical Learning` directory to execute KGE models
+
+#### 🔍 Step 4: Enriching vaidated KG with symbolic predictions
+```bash
+python kge.py
+
+```
+This script will take `input.json` as an input to select respective KGE models, becnhmark KGs and the path to store the results (e.g., H@1).
+
 
 ## 📊 Benchmarks Included
 
