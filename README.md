@@ -48,9 +48,9 @@ The **CoPCA Pipeline** follows these major steps:
 
 | **KG Size** | **Benchmark**     | **#Constraints** | **#Valid** | **#Invalid** |
 |-------------|-------------------|------------------|------------|--------------|
-| **Large**   | DB100K            | 6                | 390,351    | 62,024       |
-| **Medium**  | YAGO3-10          | 4                | 393,205    | 58,719       |
-| **Small**   | French Royalty    | 2                | 1,922      | 298          |
+| **Large**   | DB100K            | 6                | 406,533    | 45,842       |
+| **Medium**  | YAGO3-10          | 4                | 407,480    | 44,444       |
+| **Small**   | French Royalty    | 2                | 1,979      | 243          |
 
 ## 📈 Evaluation Metrics
 
